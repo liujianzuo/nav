@@ -1,0 +1,22 @@
+.hide{
+    display:none
+}
+.header_title{
+    background-color: #fff;
+    opacity: 0.2;
+}
+#blog_my:hover{
+    font-size: large;
+    color: #1bc634;
+}
+.loging_register:hover{
+    color: gold !important;
+
+}
+.check-img{
+    height: 29px;
+    width: 70px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}

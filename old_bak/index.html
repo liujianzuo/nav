@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    video {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        background-color: #161b1f;
+        /*min-width: 100%;*/
+        /*min-height: 100%;*/
+        /*height: auto;*/
+        height: 100%;
+        /*width: auto;*/
+        width: 100%;
+        /*加滤镜*/
+        /*opacity: 66%;*/
+        /*filter: blur(15px); //背景模糊设置*/
+        /*-webkit-filter: grayscale(100%);*/
+        /*filter:grayscale(10%); //背景灰度设置*/
+        z-index: -11
+    }
+
+    /*source {*/
+    /*    min-width: 100%;*/
+    /*    min-height: 100%;*/
+    /*    height: auto;*/
+    /*    width: auto;*/
+    /*}*/
+
+    p {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+</style>
+<!--<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css"/>-->
+<link rel="stylesheet" href="css/mywow.css"/>
+<!--<link rel="stylesheet" href="css/font.css"/>-->
+<link rel="stylesheet" href="css/mycss.css"/>
+<link rel="icon" href="img/favicon.ico"/>
+<title id="page-title"
+       style='color:red;font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;'>
+    welcome </title>
+<script src="js/jquery-1.12.4.js"></script>
+
+<body>
+<header class="site-header">
+    <!-- Logo & Navigation -->
+    <nav class="site-navigation">
+        <div class="container">
+            <div class="logo">
+                <!--<a class="logo-default" href="/home/index/index.html"><img src="/statics/img/aaa.jpg" alt="logo"></a>-->
+                <a class="logo-transparent" class="hide" href="/"><img src="" alt=""></a></div>
+            <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="fa fa-bars"></i></a>
+            <ul class="nav-menu">
+                <li>
+                    <a href="/" target="_self">home</a>
+                </li>
+                <!--<li>-->
+                    <!--<a style="color: gold" href="http://www.cnblogs.com/liujianzuo888/p/5493081.html" target="_self">xxx</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="/blog" id="blog_my" style="color:gold;" target="_self">movie</a>-->
+                <!--</li>-->
+
+                <li><a class="menu-highlighted global-login loging_register" target="_blank" href="http://c.liujianzuo.com">movie</a></li>
+                <li><a class="menu-highlighted global-login loging_register" target="_blank"  href="http://xiaoshuo.liujianzuo.com">novel</a></li>
+                <!--<li><a class="menu-highlighted global-login loging_register" href="/login">xxx</a></li>-->
+                <!--<li><a class="loging_register menu-highlighted global-login" href="/register">register</a></li>-->
+
+            </ul>
+        </div>
+    </nav>
+    <!-- END Logo & Navigation -->
+    <!-- Header image -->
+
+    <!--<div style='background-image: url(https://img01.sogoucdn.com/app/a/100520113/20140911190333)' class="banner banner-full-height overlay-black">-->
+    <div id="my_skin" class="banner banner-full-height overlay-black">
+
+        <div style='opacity: 1' class="container text-center" style="top: 500px;">
+            <!--<h3 ><a style="color: #1bc634" class="menu-highlighted global-login loging_register" target="_blank" href="http://c.liujianzuo.com">movie</a></h3> -->
+            <!--<h3><a style="color: #1bc634" class="menu-highlighted global-login loging_register" target="_blank"  href="http://xiaoshuo.liujianzuo.com">novel</a></h3>-->
+            <h4></h4>
+            <!--<h5  href="http://c.liujianzuo.com"><a>movie</a></h5>-->
+                        <!--<h5  href="http://c.liujianzuo.com"><a>novel</a></h5>-->
+
+            <!--<h5>更多功能。。。</h5>-->
+                <a role="button" class="btn btn-danger btn-outline btn-lg" target="_blank"  href="http://c.liujianzuo.com" > MOVIE </a>
+            <a role="button" class="btn btn-danger btn-outline btn-lg" target="_blank" href="http://d.liujianzuo.com"> MUSIC </a>
+            <a role="button" class="btn btn-danger btn-outline btn-lg" target="_blank" href="http://bbs.liujianzuo.com"> BBS </a>
+
+            <p><a id="bg1" role="button" href="#" class="btn btn-danger btn-outline btn-lg"> background 1 </a></p>
+            <p><a id="bg2" role="button" href="#" class="btn btn-danger btn-outline btn-lg"> background 2 </a></p>
+            <p><a id="bg3" role="button" href="#" class="btn btn-danger btn-outline btn-lg"> background 3 </a></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>            <br>
+            <br>
+            <br>
+            <br>
+
+            <div style="position: fixed;left: 28%">
+                <a role="button" href="#" class="btn-lg"> About Me:</a>
+                <img id="qq_logo" style="width: 43px;height: 43px;" src="./img/qq_logo.png">
+                <img id="my_qq_logo" class="hide" style="position:absolute;top: 43px;width: 100px;height: 100px;"
+                     src="./img/my_qq_logo.jpg">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img id="weixin_logo" style="width: 43px;height: 43px;" src="./img/weixin_logo.png">
+                <img id="my_weixin_logo" class="hide" style="position:absolute;top: 43px;width: 100px;height: 100px;"
+                     src="./img/my_weixin_logo.png">
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container text-center" style="opacity: 0.1;background-color: transparent">
+        <h3 style="margin: 0">刘健佐</h3>
+
+    </div>
+    <!-- END Header image -->
+</header>
+<!--<video id="myVideo" autoplay loop muted>-->
+<video id="myVideo" autoplay loop muted src="https://pro-video.xiaoheiban.cn/202009/5309bc31-5f35-4116-a25f-aae484be6de3.mp4">
+    <!--<source src="https://pro-video.xiaoheiban.cn/202009/a793c945-b969-4945-af89-81ccfeb12f8c.mp4" type="video/mp4"  />-->
+    <!--<source src="https://pro-video.xiaoheiban.cn/202009/5309bc31-5f35-4116-a25f-aae484be6de3.mp4" type="video/mp4"/>-->
+    <!--<source   src="https://pro-video.xiaoheiban.cn/202009/e23958be-8c19-4070-8ddd-2b22f2a1d598.mp4" type="video/mp4"  />-->
+    <!--<source src="https://mtyy.org/mp4/5f5c43c6160a154a670c177e.mp4" type="video/mp4"  />-->
+    <!--<source src="https://mtyy.org/mp4/5f5c447a160a154a670c40fe.mp4" type="video/mp4"  />-->
+    <!--<source src="https://cdn.jsdelivr.net/gh/liujianzuo/pic_rep/202009/i0525oeshi6.mp4" type="video/mp4"  />-->
+    <!--Your browser does not support the video tag.-->
+</video>
+
+<script>
+
+    var myVideo = document.getElementById('myVideo')//获取video元素
+    tol = 0 //总时长
+    myVideo.addEventListener("loadedmetadata", function () {
+        tol = myVideo.duration;//获取总时长
+
+    });//播放
+
+    function play() {
+
+        myVideo.play();
+
+    }//暂停
+
+    function pause() {
+
+        myVideo.pause();
+
+    }
+    //播放时间点更新时
+    //
+    // myVideo.addEventListener("timeupdate", function(){
+    
+    //     var currentTime = myVideo.currentTime;//获取当前播放时间
+    //   if (currentTime > 0.1) {
+    //         // console.log(currentTime);//在调试器中打印
+    //         // myVideo.muted = false;
+    //         // setVol(0.05)
+    //         // myVideo.muted = false;
+    //         // play()
+    //   }
+    
+    //         // console.log(currentTime);//在调试器中打印
+    
+    
+    // });//设置播放点
+
+    myVideo.addEventListener("onmousemove", function(){
+    
+    
+          myVideo.muted = false;
+          setVol(0.3)
+    
+            console.log(currentTime);//在调试器中打印
+    
+    });//设置播放点
+    function playBySeconds(num) {
+
+        myVideo.currentTime = num;
+
+    }//音量改变时
+
+    myVideo.addEventListener("volumechange", function () {
+
+        var volume = myVideo.volume;//获取当前音量
+        
+        console.log(volume);//在调试器中打印
+        play()
+
+    });//设置音量
+
+    function setVol(num) {
+
+        myVideo.volume = num;
+
+    }
+
+    window.onload = function () {
+            $("#my_skin").mousemove(function () {
+                
+                myVideo.muted = false;
+                setVol(0.05);
+                play()
+        
+            })
+        console.log(123)
+        //             document.getElementById("my_skin").click();
+        // t = setInterval(function () {
+
+        // //     myVideo.muted = false;
+        // //     setVol(0.05);
+        //     // play()
+        //     // myVideo.muted = false;
+        //     // console.log("解除静音")
+        //     // setVol(0.05);
+
+        //     clearInterval(t)
+        // }, 3000)
+
+        var $bg1 = $("#bg1")
+        var $bg2 = $("#bg2")
+        var $bg3 = $("#bg3")
+        $bg1.click(function () {
+            console.log("bg1")
+            myVideo.src = "https://pro-video.xiaoheiban.cn/202009/5309bc31-5f35-4116-a25f-aae484be6de3.mp4"
+            myVideo.muted = false;
+                setVol(0.05)
+            play()
+        })
+        $bg2.click(function () {
+            console.log("bg2")
+            myVideo.src = "https://pro-video.xiaoheiban.cn/202009/e23958be-8c19-4070-8ddd-2b22f2a1d598.mp4"
+                        myVideo.muted = false;setVol(0.05)
+            play()
+        })
+        $bg3.click(function () {
+            console.log("bg3")
+            myVideo.src =  "https://pro-video.xiaoheiban.cn/202009/a793c945-b969-4945-af89-81ccfeb12f8c.mp4"
+                        myVideo.muted = false;setVol(0.05)
+            play()
+        })
+    }
+
+
+
+
+    // 标题跑马灯
+    (function () {
+        var p_title = $('head title')
+        setInterval(function () {
+            var fir_word = p_title.text().charAt(0)
+            var all_text = p_title.text().slice(1, p_title.text().length)
+            var new_text = all_text + fir_word
+            p_title.text(new_text)
+        }, 300)
+    })
+    // 导航栏透明
+    window.onscroll = function () {
+        var current = $(window).scrollTop();
+                        
+                myVideo.muted = false;
+                setVol(0.05);
+                play()
+        
+        console.log(current)
+        if (current < 10) {
+            $(".site-navigation").removeClass("header_title")
+        } else {
+            $(".site-navigation").addClass("header_title")
+
+        }
+    }
+
+
+    $("#qq_logo").mouseenter(function () {
+        $("#my_qq_logo").removeClass("hide")
+    }).mouseout(function () {
+        $("#my_qq_logo").addClass("hide")
+    })
+    $("#weixin_logo").mouseenter(function () {
+        $("#my_weixin_logo").removeClass("hide")
+    }).mouseout(function () {
+        $("#my_weixin_logo").addClass("hide")
+    })
+
+</script>
+</body>

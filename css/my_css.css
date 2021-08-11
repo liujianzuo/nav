@@ -1,0 +1,118 @@
+        body{
+            height: 0;
+        }
+         #music ul li{
+           display: inline;
+         }
+
+        #music ul span:hover{/*鼠标移动时的颜色变化*/
+          background: #f29b5a;
+          background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+          background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+          background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+          background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+          background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+          text-decoration: none;
+          color: #000;
+        }
+        #music ul span.active{
+            color: #190876;
+          font-size: 20px;
+          padding: 4px;
+          text-decoration: none;
+        }
+        #music ul{
+          list-style: none;
+          padding: 10px 2px;
+
+        }
+        #music ul span{
+          background: #eb94d0;
+          /* 创建渐变 */
+          background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+          background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+          background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+          background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+          background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+          /* 给按钮添加圆角 */
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 20px;
+          text-shadow: 3px 2px 1px #9daef5;
+          -webkit-box-shadow: 6px 5px 24px #666666;
+          -moz-box-shadow: 6px 5px 24px #666666;
+          box-shadow: 6px 5px 24px #666666;
+          font-family: Arial;
+          color: #f1f5f9;
+          font-size: 16px;
+          padding: 2px;
+          text-decoration: none;
+        }
+        #music {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        #xxxx {
+          top: 40px;
+          height: 300px;
+
+          overflow-y: scroll;
+          width: 12rem; overflow-x: hidden;text-overflow:ellipsis;white-space: nowrap;text-align: left;
+
+        }
+        #audi0111{
+          width: 16rem;
+          height: 20px;
+        }
+        #lllogo {
+          animation: move 5s linear infinite;
+
+        }
+        @keyframes move {
+          0% {
+            transform: rotateZ(720deg);
+          }
+          100% {
+            transform: rotateZ(0deg);
+          }
+        }
+
+        #wenzi{
+          animation: change 5s linear infinite;
+        }
+              @keyframes change {
+          0% {
+            color: #f1f5f9;
+                        text-align: center;
+            font: 100px/200px "微软雅黑";
+            text-shadow:10px 10px 10px gray,pink 20px 20px 20px;
+          }
+                20% {
+            color: #46b8da;
+
+          }
+                40% {
+            color: #eb94d0;
+                              text-align: center;
+            font: 100px/200px "微软雅黑";
+            text-shadow:10px 10px 10px gray,pink 20px 20px 20px;
+
+          }
+                60% {
+            color: springgreen;
+
+          }
+                80% {
+            color: orangered;
+
+          }
+          100% {
+            color: deeppink;
+                        text-align: center;
+            font: 100px/200px "微软雅黑";
+            text-shadow:10px 10px 10px gray,pink 20px 20px 20px;
+          }
+        }
+
