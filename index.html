@@ -148,7 +148,7 @@
 
 <body>
         <div  id="music" >
-    <audio id="audi0111" :src="musicData[currentIndex].songSrc" controls autoplay @ended = 'nextHanlder' @error='abortHandler'></audio>
+    <audio id="audi0111" :src="`http://music.163.com/song/media/outer/url?id=` + musicData[currentIndex].songSrc" controls autoplay @ended = 'nextHanlder' @error='abortHandler'></audio>
 
           <button @click="nextSong" style=" height:40px;line-height: 40px">下首</button><br>
           <button @click="stopSong" style="float: right;  height: 40px;line-height: 40px">暂停</button>
@@ -220,21 +220,15 @@
 <div id="bg" style="z-index:-10000">
 </div>
 <script src="js/jquery.min.js"></script>
-<!--<script src="js/skel.min.js"></script>-->
-<!--<script src="js/util.js"></script>-->
-
-<!--<script src="js/main.js"></script>-->
-<!--<script type="text/javascript">document.oncontextmenu=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onpaste=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncopy=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncut=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onselectstart=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}};</script>-->
 
 
 
-
-<script src="./vue@2.6.12.js"></script>
-<script src="./ljz_music.js"></script>
-<script src="./js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/liujianzuo/nav/vue@2.6.12.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/liujianzuo/nav/ljz_music.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/liujianzuo/nav/js/jquery.min.js"></script>
 <script>
   function bofang(){
-    var audio111 = $('#audi0111');
+    let audio111 = $('#audi0111');
         console.log(audio111)
          var promise =  audio111[0].play();
             if (promise !== undefined) {
